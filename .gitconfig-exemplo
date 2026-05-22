@@ -1,0 +1,61 @@
+# Exemplo de configuração do Git em Português
+# Copie estas linhas para seu ~/.gitconfig ou execute os comandos correspondentes
+
+# Comando rápido para aplicar tudo:
+# for alias in puxar empurrar trazer ramificar ramo confirmar rebasear mesclar esmagar guardar etiquetar marcar apanhar emendar culpar reverter voltar; do
+#     git config --global alias.$alias [comando]
+# done
+
+[alias]
+    # Verbos principais
+    puxar = pull
+    empurrar = push
+    trazer = fetch
+
+    # Ramificação
+    ramificar = branch
+    ramo = branch
+
+    # Confirmação
+    confirmar = commit
+    emendar = commit --amend
+
+    # Rebase e merge
+    rebasear = rebase
+    mesclar = merge
+    esmagar = squash
+
+    # Stash
+    guardar = stash
+    guardar-listar = stash list
+    guardar-aplicar = stash apply
+    guardar-pop = stash pop
+
+    # Tags e marcações
+    etiquetar = tag
+    marcar = tag
+
+    # Seleção de mudanças
+    apanhar = cherry-pick
+
+    # Blame e histórico
+    culpar = blame
+    reverter = revert
+    voltar = reset
+
+    # Aliases úteis adicionais
+    log-decorado = log --oneline --decorate --graph --all
+    status-curto = status --short
+    histórico = log
+    diferença = diff
+    comparar = diff
+
+    # Informações rápidas
+    ramos = branch -a
+    ramos-locais = branch -l
+    etiquetas = tag -l
+
+    # Workflow
+    sincronia = pull --rebase
+    limpar = clean -fd
+    descartar = checkout --
