@@ -79,7 +79,7 @@ O script detecta a versão do git e usa a sintaxe correta:
 Ou execute diretamente sem clonar:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mpalu/git-em-portugues/main/instalar.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mpalu/git-em-portugues/principal/instalar.sh | bash
 ```
 
 ## Opção 4: Atalho de Shell (Bash/Zsh)
